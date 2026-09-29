@@ -69,7 +69,7 @@ export default function MapSection() {
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <div className="flex flex-col gap-1">
                   <span className="font-body text-xs font-bold text-on-surface">
-                    Alamat Fisik Gudang
+                    Alamat Gudang
                   </span>
                   <p className="font-body text-xs sm:text-sm text-on-surface-variant leading-relaxed">
                     {COMPANY_INFO.address}
@@ -94,7 +94,7 @@ export default function MapSection() {
                   </div>
                   <div className="flex justify-between py-2 px-3 rounded-lg bg-red-50 text-red-700 border border-red-100 font-semibold">
                     <span>Minggu & Hari Libur</span>
-                    <span>Tutup (WA Darurat Aktif)</span>
+                    <span>Tutup (WA Aktif)</span>
                   </div>
                 </div>
               </div>

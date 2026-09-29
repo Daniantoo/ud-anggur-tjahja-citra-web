@@ -21,11 +21,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'UD. Anggur Tjahja Citra - Suplai Masker Kain, Sarung Tangan, dan Kain Majun',
     description:
-      'Penyedia utama masker kain, sarung tangan, dan kain majun untuk pabrik dan manufaktur skala nasional.',
+      'Penyedia utama Masker Kain, Sarung Tangan, dan Kain Majun.',
     url: '-',
     siteName: 'UD. Anggur Tjahja Citra',
     locale: 'id_ID',
     type: 'website',
+  },
+  icons: {
+    icon: '/LOGO.jpg',
+    shortcut: '/LOGO.jpg',
+    apple: '/LOGO.jpg',
   },
   robots: {
     index: true,
@@ -41,6 +46,8 @@ export default function RootLayout({
   return (
     <html lang="id" className="scroll-smooth">
       <head>
+        <link rel="icon" href="/LOGO.jpg" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/LOGO.jpg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

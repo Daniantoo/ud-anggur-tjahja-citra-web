@@ -1,14 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { ChevronRight, Clock, MapPin, Phone, Mail, MessageCircle } from 'lucide-react';
+import { Clock, MapPin, Phone, Mail, MessageCircle } from 'lucide-react';
 import { COMPANY_INFO } from '@/data/products';
 
 export default function Footer() {
   return (
     <footer className="w-full bg-surface-low border-t border-surface-container">
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
           {/* Column 1: Company Profile */}
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
@@ -25,47 +24,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="font-body text-xs sm:text-sm text-on-surface-variant leading-relaxed">
-              Mitra pengadaan terpercaya masker kain, sarung tangan dan kain majun berkualitas tinggi untuk kebutuhan operasional anda.
+              Mitra pengadaan terpercaya masker kain, sarung tangan dan kain majun berkualitas untuk kebutuhan operasional anda.
             </p>
-          </div>
-
-          {/* Column 2: Quick Links */}
-          <div className="flex flex-col gap-4">
-            <h4 className="font-display text-base font-bold text-on-surface">
-              Navigasi Cepat
-            </h4>
-            <ul className="flex flex-col gap-2.5 font-body text-xs sm:text-sm">
-              <li>
-                <Link href="/produk?kategori=sarung-tangan" className="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
-                  <ChevronRight className="w-3.5 h-3.5 text-primary" />
-                  <span>Sarung Tangan</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/produk?kategori=masker" className="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
-                  <ChevronRight className="w-3.5 h-3.5 text-primary" />
-                  <span>Masker Kain</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/produk?kategori=kain-majun" className="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
-                  <ChevronRight className="w-3.5 h-3.5 text-primary" />
-                  <span>Kain Majun</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/#kontak" className="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
-                  <ChevronRight className="w-3.5 h-3.5 text-primary" />
-                  <span>Hubungi Kami</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/#lokasi-gudang" className="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
-                  <ChevronRight className="w-3.5 h-3.5 text-primary" />
-                  <span>Lokasi Gudang</span>
-                </Link>
-              </li>
-            </ul>
           </div>
 
           {/* Column 3: Operating Hours */}
@@ -102,7 +62,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-primary shrink-0" />
-                <span className="text-on-surface font-semibold">{COMPANY_INFO.phone}</span>
+                <span>{COMPANY_INFO.phone}</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-primary shrink-0" />
@@ -110,7 +70,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <MessageCircle className="w-4 h-4 text-primary shrink-0" />
-                <span className="text-on-surface font-semibold">+{COMPANY_INFO.whatsappNumber} (WhatsApp)</span>
+                <span>{COMPANY_INFO.whatsappNumber} (WhatsApp)</span>
               </div>
             </div>
           </div>

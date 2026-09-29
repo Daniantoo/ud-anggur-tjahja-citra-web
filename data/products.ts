@@ -19,7 +19,7 @@ export const COMPANY_INFO = {
   tagline: 'Penyedia Utama Masker Kain, Sarung Tangan & Kain Majun',
   phone: '0851-0341-0018 / 0813-3373-7018',
   whatsappNumber: '6285103410018',
-  email: '-',
+  email: 'anggurtjahjacitra@yahoo.com',
   address: 'Jl. Raya Babat Jerawat Jl. Mulyomukti No.15, Babat Jerawat, Kec. Pakal, Surabaya, Jawa Timur 60197',
   coordinates: {
     lat: -7.2396049721221685,

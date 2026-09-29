@@ -23,10 +23,10 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass-header border-b border-surface-container/80 shadow-sm transition-all">
-      <div className="h-20 w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+      <div className="h-20 w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3 sm:gap-4">
         {/* Brand Logo & Tagline */}
-        <Link href="/" className="flex items-center gap-3 shrink-0 group">
-          <div className="relative w-11 h-11 rounded-xl overflow-hidden shadow-sm group-hover:scale-105 transition-transform bg-white border border-surface-container flex items-center justify-center p-0.5">
+        <Link href="/" className="flex items-center gap-2.5 sm:gap-3 shrink min-w-0 group">
+          <div className="relative w-9 h-9 sm:w-11 sm:h-11 rounded-xl overflow-hidden shadow-sm group-hover:scale-105 transition-transform bg-white border border-surface-container flex items-center justify-center p-0.5 shrink-0">
             <Image
               src="/LOGO.jpg"
               alt="Logo UD. Anggur Tjahja Citra"
@@ -35,11 +35,11 @@ export default function Navbar() {
               priority
             />
           </div>
-          <div className="flex flex-col">
-            <span className="font-display font-extrabold text-base sm:text-lg text-primary leading-none tracking-tight">
+          <div className="flex flex-col min-w-0">
+            <span className="font-display font-extrabold text-sm sm:text-base md:text-lg text-primary leading-tight tracking-tight truncate">
               UD. Anggur Tjahja Citra
             </span>
-            <span className="font-body text-[10px] font-bold text-on-surface-variant tracking-wider uppercase mt-1">
+            <span className="font-body text-[8px] sm:text-[10px] font-bold text-on-surface-variant tracking-normal sm:tracking-wider uppercase mt-0.5 truncate block">
               Sarung Tangan • Masker Kain • Kain Majun
             </span>
           </div>
@@ -68,20 +68,22 @@ export default function Navbar() {
         </nav>
 
         {/* CTA & Mobile Menu Toggle */}
-        <div className="flex items-center gap-3 shrink-0">
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           <a
             href={waLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary text-white font-body text-sm font-semibold shadow-purple-glow hover:bg-primary-container transition-all hover:scale-[1.02]"
+            aria-label="Konsultasi WhatsApp"
+            className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl bg-primary text-white font-body text-xs sm:text-sm font-semibold shadow-purple-glow hover:bg-primary-container transition-all hover:scale-[1.02] shrink-0 whitespace-nowrap"
           >
-            <MessageCircle className="w-4 h-4 fill-white/20" />
+            <MessageCircle className="w-4 h-4 shrink-0 fill-white/20" />
+            <span className="sm:hidden">Konsultasi WA</span>
             <span className="hidden sm:inline">Konsultasi WhatsApp</span>
           </a>
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-high transition-colors"
+            className="lg:hidden p-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-high transition-colors shrink-0"
             aria-label="Toggle Menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -110,7 +112,7 @@ export default function Navbar() {
               className="w-full py-3 px-4 rounded-xl bg-primary text-white font-body text-sm font-semibold flex items-center justify-center gap-2 shadow-purple-glow"
             >
               <MessageCircle className="w-4 h-4" />
-              <span>Hubungi Sales B2B via WA</span>
+              <span>Hubungi Kami</span>
             </a>
           </div>
         </div>
