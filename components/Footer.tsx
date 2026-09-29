@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Clock, MapPin, Phone, Mail, MessageCircle } from 'lucide-react';
+import { Clock, MapPin, Phone, Mail, MessageCircle, Headset } from 'lucide-react';
 import { COMPANY_INFO } from '@/data/products';
 
 export default function Footer() {
@@ -28,7 +28,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Column 3: Operating Hours */}
+          {/* Column 2: Operating Hours */}
           <div className="flex flex-col gap-4">
             <h4 className="font-display text-base font-bold text-on-surface">
               Jam Operasional
@@ -42,7 +42,7 @@ export default function Footer() {
                 </div>
               </div>
               <div className="pt-2 border-t border-surface-container text-xs text-on-surface-variant">
-                Minggu & Hari Libur: Tutup
+                Minggu & Hari Libur: Tutup (WA Aktif)
               </div>
             </div>
             <span className="font-body text-[11px] font-semibold text-secondary uppercase tracking-wider">
@@ -50,7 +50,7 @@ export default function Footer() {
             </span>
           </div>
 
-          {/* Column 4: Contact Us */}
+          {/* Column 3: Contact Us */}
           <div className="flex flex-col gap-4">
             <h4 className="font-display text-base font-bold text-on-surface">
               Kontak Kami
@@ -70,7 +70,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <MessageCircle className="w-4 h-4 text-primary shrink-0" />
-                <span>{COMPANY_INFO.whatsappNumber} (WhatsApp)</span>
+                <span>+{COMPANY_INFO.whatsappNumberFirst} & +{COMPANY_INFO.whatsappNumberSecond} (WhatsApp)</span>
+              </div>
+              <div className="flex items-center gap-3 pt-2 border-t border-surface-container">
+                <Headset className="w-4 h-4 text-primary shrink-0" />
+                <span>Informasi Lebih Lanjut (Marketing): {COMPANY_INFO.marketingNumber}</span>
               </div>
             </div>
           </div>

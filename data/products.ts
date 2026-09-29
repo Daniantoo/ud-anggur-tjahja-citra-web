@@ -17,8 +17,10 @@ export const COMPANY_INFO = {
   name: 'UD. Anggur Tjahja Citra',
   shortName: 'UD. Anggur Tjahja Citra',
   tagline: 'Penyedia Utama Masker Kain, Sarung Tangan & Kain Majun',
-  phone: '0851-0341-0018 / 0813-3373-7018',
-  whatsappNumber: '6285103410018',
+  phone: '(031) 57431997 / (031) 57431979',
+  whatsappNumberFirst: '6285103410018',
+  whatsappNumberSecond: '6285732328116',
+  marketingNumber: '0813-3373-7018',
   email: 'anggurtjahjacitra@yahoo.com',
   address: 'Jl. Raya Babat Jerawat Jl. Mulyomukti No.15, Babat Jerawat, Kec. Pakal, Surabaya, Jawa Timur 60197',
   coordinates: {
@@ -28,12 +30,12 @@ export const COMPANY_INFO = {
   operatingHours: {
     weekday: 'Senin - Jumat: 08:00 - 17:00 WIB',
     saturday: 'Sabtu: 08:00 - 14:00 WIB',
-    sunday: 'Minggu & Hari Libur: Tutup (WA Darurat Aktif)',
+    sunday: 'Minggu & Hari Libur: Tutup (WA Aktif)',
   },
 };
 
 export function createWaLink(message: string): string {
-  const cleanNumber = COMPANY_INFO.whatsappNumber.replace(/^0/, '62').replace(/\D/g, '');
+  const cleanNumber = COMPANY_INFO.whatsappNumberFirst.replace(/^0/, '62').replace(/\D/g, '');
   return `https://wa.me/${cleanNumber}?text=${encodeURIComponent(message)}`;
 }
 

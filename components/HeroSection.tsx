@@ -77,7 +77,7 @@ export default function HeroSection() {
             />
             <Image
               src="/Anggur Tjahja Citra (2).png"
-              alt="Lokasi & Armada UD Anggur Tjahja Citra"
+              alt="Armada UD Anggur Tjahja Citra"
               fill
               priority
               className="w-full h-full object-contain relative z-10 group-hover:scale-[1.03] transition-transform duration-500 py-1"
@@ -85,7 +85,7 @@ export default function HeroSection() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 pointer-events-none z-20" />
             <div className="absolute top-3.5 right-3.5 bg-black/70 text-white font-body text-[10px] sm:text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-md border border-white/20 z-30">
-              Lokasi Usaha & Armada
+              Armada UD Anggur Tjahja Citra
             </div>
           </div>
 

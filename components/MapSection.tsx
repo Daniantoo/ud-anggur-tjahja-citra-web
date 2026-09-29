@@ -59,7 +59,6 @@ export default function MapSection() {
                     Central Warehouse & Office
                   </h3>
                   <span className="font-body text-xs text-secondary font-bold uppercase tracking-wider">
-                    Hub Distribusi Utama
                   </span>
                 </div>
               </div>
